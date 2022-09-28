@@ -24,11 +24,11 @@ def lime(request):
              'img': "",
              'name': ""},
             ]
-    return render(request, 'main.html', {"datas":data})
+    return render(request, 'new_web/first_page.html', {"datas":data})
 
 
 def my_list(request):
-    return HttpResponse("my_list's list")
+    return render(request, 'second_page.html')
 
 
 def foods(request):
